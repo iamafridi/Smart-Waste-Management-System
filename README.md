@@ -11,11 +11,27 @@ The Smart Waste Management System is a Java-based application designed to stream
 - **Eco-Points Management**: Track eco-points, rewards, and related activities.
 - **Report Generation**: Generate comprehensive reports on waste collection, bin management, and eco-points.
 
-  Here Are the results :
-  ![Screenshot 2024-09-12 000607](https://github.com/user-attachments/assets/f0aa5a76-118c-4755-ae01-92a9b6ad0435)
-![Screenshot 2024-09-12 000542](https://github.com/user-attachments/assets/91e32cf5-706d-4893-bf00-8319d6615b4a)
-![Screenshot 2024-09-12 000515](https://github.com/user-attachments/assets/70191b42-bc2c-4fba-a080-aeee65d1aa8e)
-![Screenshot 2024-09-12 000414](https://github.com/user-attachments/assets/a732baef-8fd8-4cc6-897e-e55aebdaabd3)
+ 
+Below are some screenshots of the application:
+
+<table>
+  <tr>
+    <td>
+      <img src="![Screenshot 2024-09-12 000542](https://github.com/user-attachments/assets/91e32cf5-706d-4893-bf00-8319d6615b4a)" alt="System Status Monitoring" width="300"/>
+    </td>
+    <td>
+      <img src="![Screenshot 2024-09-12 000607](https://github.com/user-attachments/assets/f0aa5a76-118c-4755-ae01-92a9b6ad0435)" alt="Manage Bins and Routes" width="300"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="![Screenshot 2024-09-12 000515](https://github.com/user-attachments/assets/70191b42-bc2c-4fba-a080-aeee65d1aa8e)" alt="Manage Eco-Points" width="300"/>
+    </td>
+    <td>
+      <img src="![Screenshot 2024-09-12 000414](https://github.com/user-attachments/assets/a732baef-8fd8-4cc6-897e-e55aebdaabd3)" alt="Generate Reports" width="300"/>
+    </td>
+  </tr>
+</table>
 
 
 ## Installation
