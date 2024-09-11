@@ -14,9 +14,11 @@ The Smart Waste Management System is a Java-based application designed to stream
  
 Below are some screenshots of the application:
 
-     ![Screenshot 2024-09-12 000542](https://github.com/user-attachments/assets/91e32cf5-706d-4893-bf00-8319d6615b4a) 
-   
-      ![Screenshot 2024-09-12 000414](https://github.com/user-attachments/assets/a732baef-8fd8-4cc6-897e-e55aebdaabd3)
+   ![Screenshot 2024-09-12 000607](https://github.com/user-attachments/assets/7dfa0f67-e160-4fa1-a22b-76dba488e028)
+![Screenshot 2024-09-12 000542](https://github.com/user-attachments/assets/9acbed77-d917-468e-b6e5-8ed3505e1130)
+![Screenshot 2024-09-12 000515](https://github.com/user-attachments/assets/b39e3105-095c-4af9-9775-fa519aab5558)
+![Screenshot 2024-09-12 000414](https://github.com/user-attachments/assets/517246eb-2a89-4bed-92b9-7b4a3f9cdb85)
+
    
 
 ## Installation
