@@ -1,3 +1,5 @@
+package src;
+
 public class SmartWasteManagementSystem {
     private SystemAdmin admin;
 
@@ -6,10 +8,10 @@ public class SmartWasteManagementSystem {
     }
 
     public void run() {
-        admin.monitorSystem();
-        admin.manageBinsAndRoutes();
-        admin.manageEcoPoints();
-        admin.generateReports();
+        System.out.println(admin.getSystemStatus());
+        System.out.println(admin.manageBinsAndRoutes());
+        System.out.println(admin.manageEcoPoints());
+        System.out.println(admin.generateReport());
     }
 
     public static void main(String[] args) {

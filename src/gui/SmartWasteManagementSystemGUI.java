@@ -1,65 +1,80 @@
+package gui;
+
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import src.SystemAdmin;
 
-public class SmartWasteManagementSystemGUI {
-    private JFrame frame;
-    private JButton monitorButton;
-    private JButton manageBinsButton;
-    private JButton manageEcoPointsButton;
-    private JButton generateReportsButton;
+public class SmartWasteManagementSystemGUI extends JFrame {
     private SystemAdmin admin;
+    private JTextArea textArea;
 
     public SmartWasteManagementSystemGUI() {
-        admin = new SystemAdmin("Afridi", "Afridi@gmail.com");
+        admin = new SystemAdmin("Emily", "emily@example.com");
 
-        frame = new JFrame("Smart Waste Management System");
-        frame.setSize(400, 300);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
+        setTitle("Smart Waste Management System");
+        setSize(600, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
 
-        monitorButton = new JButton("Monitor System Status");
-        manageBinsButton = new JButton("Manage Bins and Routes");
-        manageEcoPointsButton = new JButton("Manage Eco-Points and Rewards");
-        generateReportsButton = new JButton("Generate Reports");
+        textArea = new JTextArea();
+        textArea.setEditable(false);
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        add(scrollPane, BorderLayout.CENTER);
+
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new GridLayout(4, 1));
+
+        JButton monitorButton = new JButton("Monitor System Status");
+        JButton manageBinsButton = new JButton("Manage Bins and Routes");
+        JButton manageEcoPointsButton = new JButton("Manage Eco-Points");
+        JButton generateReportsButton = new JButton("Generate Reports");
+
+        buttonPanel.add(monitorButton);
+        buttonPanel.add(manageBinsButton);
+        buttonPanel.add(manageEcoPointsButton);
+        buttonPanel.add(generateReportsButton);
+
+        add(buttonPanel, BorderLayout.WEST);
 
         monitorButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                admin.monitorSystem();
+                textArea.setText(admin.getSystemStatus());
             }
         });
 
         manageBinsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                admin.manageBinsAndRoutes();
+                textArea.setText(admin.manageBinsAndRoutes());
             }
         });
 
         manageEcoPointsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                admin.manageEcoPoints();
+                textArea.setText(admin.manageEcoPoints());
             }
         });
 
         generateReportsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                admin.generateReports();
+                textArea.setText(admin.generateReport());
             }
         });
 
-        frame.add(monitorButton);
-        frame.add(manageBinsButton);
-        frame.add(manageEcoPointsButton);
-        frame.add(generateReportsButton);
-
-        frame.setVisible(true);
+        setVisible(true);
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(SmartWasteManagementSystemGUI::new);
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new SmartWasteManagementSystemGUI();
+            }
+        });
     }
 }

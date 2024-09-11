@@ -1,3 +1,5 @@
+package src;
+
 public class SystemAdmin {
     private String name;
     private String email;
@@ -7,19 +9,19 @@ public class SystemAdmin {
         this.email = email;
     }
 
-    public void monitorSystem() {
-        System.out.println("Monitoring system status...");
+    public String getSystemStatus() {
+        return "System is running smoothly.";
     }
 
-    public void manageBinsAndRoutes() {
-        System.out.println("Managing bins and routes...");
+    public String manageBinsAndRoutes() {
+        return "Bins and routes are being managed.";
     }
 
-    public void manageEcoPoints() {
-        System.out.println("Managing eco-points and rewards...");
+    public String manageEcoPoints() {
+        return "Eco-points are being managed.";
     }
 
-    public void generateReports() {
-        System.out.println("Generating reports...");
+    public String generateReport() {
+        return "Report has been generated.";
     }
 }
