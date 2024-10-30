@@ -27,7 +27,7 @@ To run this application, follow these steps:
 
 1. **Clone the Repository**
     
-    git clone https://github.com/yourusername/SmartWasteManagement.git
+    git clone https://github.com/iamafridi/SmartWasteManagement.git
     
 2. **Navigate to the Project Directory**
     
